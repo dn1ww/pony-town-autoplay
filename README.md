@@ -5,7 +5,7 @@
 
 ## 🔄 AutoPlay Button Presser for [Pony.Town](https://pony.town/)  
 
-This JavaScript bookmarklet automatically clicks the "Play" button on [[Pony.Town](https://pony.town/)](https://pony.town), making it easier to enter the game without extra clicks.  
+This JavaScript bookmarklet automatically clicks the "Play" button on [Pony.Town](https://pony.town), making it easier to enter the game without extra clicks.  
 
 ### ⚠️ Warning  
 I have nothing against the game’s rules, and all further actions in the game are performed by users independently, without my influence or the script’s interference. I am not responsible for your account, any penalties, or other consequences of using this script. Use it at your own risk.  
@@ -29,7 +29,7 @@ Use at your own risk. The author is not responsible for any penalties in the gam
 
 ---
 
-## 🔄 AutoPlay Button Presser for [Pony.Town](https://pony.town/)  
+## 🔄 AutoPlay Button Presser for [Pony.Town](https://pony.town)  
 
 Этот JavaScript-букмарклет автоматически нажимает кнопку "Play" на сайте [Pony.Town](https://pony.town), упрощая вход в игру без лишних кликов.  
 
