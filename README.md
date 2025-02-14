@@ -14,7 +14,8 @@ I have nothing against the game’s rules, and all further actions in the game a
 1. Open **Pony.Town** in your browser.  
 2. Copy the following code:  
    ```javascript
-   javascript:(function(){setInterval(function(){let body=document.querySelector('body');if(!body.classList.contains('playing')){let b=document.querySelector('.btn.btn-lg.btn-success');if(b){b.click();console.log("Clicked Play!");}}else{console.log("Game is already running, not clicking.");}},5000);})();
+   javascript:(function(){if(window.autoClickerRunning){clearInterval(window.autoClicker);window.autoClickerRunning=false;alert("⛔ Auto-click DISABLED!");}else{window.autoClicker=setInterval(()=>{let b=document.querySelector('.btn.btn-lg.btn-success');if(b){b.click();console.log("✅ Clicked Play!");}else{console.log("❌ Play button not found...");}},5000);window.autoClickerRunning=true;alert("✅ Auto-click ENABLED! It will click Play every 5 sec.");}})();
+
    ```  
 3. Add it as a **bookmarklet** in your browser:  
    - Create a new bookmark.  
@@ -40,7 +41,7 @@ Use at your own risk. The author is not responsible for any penalties in the gam
 1. Открой **Pony.Town** в браузере.  
 2. Скопируй следующий код:  
    ```javascript
-   javascript:(function(){setInterval(function(){let body=document.querySelector('body');if(!body.classList.contains('playing')){let b=document.querySelector('.btn.btn-lg.btn-success');if(b){b.click();console.log("Нажали Play!");}}else{console.log("Игра уже идет, не кликаем.");}},5000);})();
+   javascript:(function(){    if (window.autoClickerRunning) {        clearInterval(window.autoClicker);        window.autoClickerRunning = false;        alert("⛔ Авто-клик ОТКЛЮЧЕН!");    } else {        window.autoClicker = setInterval(function(){            let playButton = document.querySelector('.btn.btn-lg.btn-success');            if (playButton) {                playButton.click();                console.log("✅ Нажали Play!");            } else {                console.log("❌ Кнопка Play не найдена...");            }        }, 5000);        window.autoClickerRunning = true;        alert("✅ Авто-клик ВКЛЮЧЕН! Будет нажимать Play каждые 5 сек.");    }})();
    ```  
 3. Добавь его как **букмарклет** в закладки браузера:  
    - Создай новую закладку.  
